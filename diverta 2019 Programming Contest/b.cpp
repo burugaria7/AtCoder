@@ -16,15 +16,18 @@ int main(void){
 
     int a = 0;
     int b = 0;
-    //int c = 0;
+    int c = 1;
 
     int ans = 0;
 
-    for(;r_*a+g_*b+b_*((n-(r_*a)-(g_*b))/b_)<n+1;b++){
-        for(;r_*a+g_*b+b_*((n-(r_*a)-(g_*b))/b_)<n+1;a++){
-            //cout <<a<<b<<((n-(r_*a)-(g_*b))/b_)<<endl;
+    for(;g_*b<=n;b++){
+        for(;r_*a<=n;a++){
             
-            if(((n-(r_*a)-(g_*b))%b_)==0&&(a+b) != 0){
+            c=((n-(r_*a)-(g_*b))/b_);
+            
+            //cout <<a<<b<<c<<endl;
+            
+            if(((n-(r_*a)-(g_*b))%b_)==0&&r_*a + g_*b + b_*c==n&&c>=0){
                 ans++;
             }
         }
@@ -33,6 +36,7 @@ int main(void){
 
     cout << ans;
 
+    //n = r_*a + g_*b + b_*c 
     //c = ((n-(r_*a)-(g_*b))/b_)
 
 
