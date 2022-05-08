@@ -31,8 +31,10 @@ int main() {
   cin.tie(0);
   ios::sync_with_stdio(false);
 
-  int n;
-  cin >> n;
+  int h, w, r, c;
+  cin >> h >> w >> r >> c;
+
+  cout << "";
 
   return 0;
 }

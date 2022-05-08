@@ -31,8 +31,21 @@ int main() {
   cin.tie(0);
   ios::sync_with_stdio(false);
 
-  int n;
-  cin >> n;
+  int n, a, b;
+  cin >> n >> a >> b;
+
+  rep(ii, n) {
+    rep(l, a) {
+      rep(i, n) {
+        if (i % 2 == 0) {
+          rep(k, b) { cout << "."; }
+        } else {
+          rep(k, b) { cout << "#"; }
+        }
+      }
+      cout << "\n";
+    }
+  }
 
   return 0;
 }
