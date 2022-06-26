@@ -27,32 +27,12 @@ const int MOD = 1000000007;
 
 // vector<vector<int>> data(3, vector<int>(4));
 
-int n;
-vector<int> h(0);
-
-ll dp(int now, int cost) {
-  if (now == 20) {
-    return cost;
-  }
-  if (now + 1 < 21) {
-    cost + dp(now + 1, cost + abs(h[now] - h[now + 1]));
-  }
-  if (now + 2 < 21) {
-    cost + dp(now + 2, cost + abs(h[now] - h[now + 2]));
-  }
-}
-
 int main() {
   cin.tie(0);
   ios::sync_with_stdio(false);
 
-  rep(i, n) {
-    int buf;
-    cin >> buf;
-    h.push_back(buf);
-  }
-
-  cout << dp(0, 0);
+  int n;
+  cin >> n;
 
   return 0;
 }
