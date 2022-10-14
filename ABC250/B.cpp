@@ -37,11 +37,21 @@ int main() {
   rep(ii, n) {
     rep(l, a) {
       rep(i, n) {
-        if (i % 2 == 0) {
-          rep(k, b) { cout << "."; }
-        } else {
-          rep(k, b) { cout << "#"; }
+
+        if(ii%2==0){
+          if (i % 2 == 0) {
+            rep(k, b) { cout << "."; }
+          } else {
+            rep(k, b) { cout << "#"; }
+          }
+        }else{
+          if (i % 2 != 0) {
+            rep(k, b) { cout << "."; }
+          } else {
+            rep(k, b) { cout << "#"; }
+          }
         }
+
       }
       cout << "\n";
     }

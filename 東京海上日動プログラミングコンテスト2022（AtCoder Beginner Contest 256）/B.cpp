@@ -85,9 +85,9 @@ int main() {
       masu[2] = old[1];
       masu[3] = old[2];
     }
-    cout << masu[0] << " " << masu[1] << " " << masu[2] << " " << masu[3]
-         << endl;
-    cout << p << endl;
+    // cout << masu[0] << " " << masu[1] << " " << masu[2] << " " << masu[3]
+    //      << endl;
+    // cout << p << endl;
   }
 
   cout << p;

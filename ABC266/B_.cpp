@@ -28,32 +28,26 @@ const int MOD = 1000000007;
 
 // vector<vector<int>> data(3, vector<int>(4));
 
-
 int main() {
   cin.tie(0);
   ios::sync_with_stdio(false);
 
-  int n;
+  ll n;
   cin >> n;
-  ll m = -1;
-  int ans;
-  string inp;
-  ll point;
-  std::map<std::string, int> map;
 
-  rep(i, n) {
-    cin >> inp;
-    cin >> point;
+  ll N = 998244353;
 
-    if (map[inp] == 0 && point > m) {
-      m = point;
-      ans = i;
+  ll nn = n % N;
+
+  if (n > 0) {
+    cout << nn;
+  } else {
+    if (nn == 0) {
+      cout << 0;
+      return 0;
     }
-
-    map[inp] = 1;
+    cout << N + nn;
   }
-
-  cout << ans + 1;
 
   return 0;
 }

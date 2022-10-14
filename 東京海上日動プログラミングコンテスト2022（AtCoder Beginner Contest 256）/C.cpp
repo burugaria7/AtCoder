@@ -52,6 +52,7 @@ bool check_w() {
   }
 }
 
+
 int main() {
   cin.tie(0);
   ios::sync_with_stdio(false);
@@ -72,10 +73,19 @@ int main() {
 
   //それぞれのhの制約をもとに数字を埋める
   //まずw_iのたてごとに決める
-  rep(i, 3) {
+  rep(i,3){
     //まず num[0][i]を決める
-    rep(k, 10) { num[0][i] = k; }
+    rep(k,10){
+      num[0][i] = k;
+
+      rep(kk.10){
+        if()
+      }
+
+    }
   }
+
+
 
   return 0;
 }

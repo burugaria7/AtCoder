@@ -52,7 +52,7 @@ int main() {
   }
 
   int ma = *max_element(alp, alp + 500);
-  cout << ma;
+  //cout << ma;
   if (ma == 1 && low && upr) {
     cout << "Yes";
   } else {

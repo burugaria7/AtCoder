@@ -42,7 +42,7 @@ int main() {
     ko_to_oya.push_back(p - 1);
   }
 
-  int ans = 0;
+  int ans = 1;
   int ko = n - 1;
   rep(i, n) {
     int oya = ko_to_oya[ko];

@@ -73,7 +73,7 @@ int main() {
     rep(i, pair_vec1.size()) {
       if (pair_vec1[i].first == pair_vec2[i].first) {
       } else {
-        cout << "No1";
+        cout << "No";
         return 0;
       }
       if (pair_vec1[i].second == pair_vec2[i].second) {

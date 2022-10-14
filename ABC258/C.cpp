@@ -60,7 +60,7 @@ int main() {
         tmp++;
       }
       for (auto a : vec) {
-        cout << a;
+        cout << a<<" ";
       }
       cout << "\n";
     } else {

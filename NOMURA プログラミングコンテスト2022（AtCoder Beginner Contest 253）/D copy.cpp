@@ -63,7 +63,7 @@ int main() {
   std::set_difference(result.begin(), result.end(), st2.begin(), st2.end(),
                       std::inserter(result1, result1.end()));
 
-  unsigned long long sum = std::accumulate(st.begin(), st.end(), 0);
+  unsigned long long sum = std::accumulate(result1.begin(), result1.end(), 0);
 
   printf("%llu", sum);
 

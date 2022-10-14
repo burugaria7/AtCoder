@@ -75,7 +75,7 @@ int main() {
           ban[l][i] += 10;
         } else {
           time = max(time, ban[l][i]);
-          cout << "数字" << i << "リール" << l << "時間" << ban[l][i] << endl;
+          // cout << "数字" << i << "リール" << l << "時間" << ban[l][i] << endl;
           st.insert(ban[l][i]);
           break;
         }

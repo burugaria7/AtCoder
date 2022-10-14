@@ -34,7 +34,14 @@ int main() {
   int h, w, r, c;
   cin >> h >> w >> r >> c;
 
-  cout << "";
+  int ans = 4;
+
+  if(r-1==0)ans--;
+  if(r+1==h+1)ans--;
+  if(c-1==0)ans--;
+  if(c+1==w+1)ans--;
+
+  cout << ans;
 
   return 0;
 }

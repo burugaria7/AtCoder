@@ -27,12 +27,12 @@ const int MOD = 1000000007;
 
 // vector<vector<int>> data(3, vector<int>(4));
 
-int n, w;
+ll n, w;
 
-vector<int> vec;
-vector<int> v;
+vector<ll> vec;
+vector<ll> v;
 
-int ans = 0;
+ll ans = 0;
 
 void recursive_comb(int *indexes, int s, int rest,
                     std::function<void(int *)> f) {
@@ -57,7 +57,7 @@ int main() {
   ios::sync_with_stdio(false);
 
   cin >> n >> w;
-  v = vector<int>(w + 10, 0);
+  v = vector<ll>(w + 10, 0);
   int tmp;
   rep(i, n) {
     cin >> tmp;
@@ -66,20 +66,20 @@ int main() {
 
   if (n > 2) {
     foreach_comb(n, 3, [](int *indexes) {
-      int www = vec[indexes[0]] + vec[indexes[1]] + vec[indexes[2]];
+      ll www = vec[indexes[0]] + vec[indexes[1]] + vec[indexes[2]];
       if (www <= w && v[www] != 1) v[www]++;
     });
   }
 
   if (n > 1) {
     foreach_comb(n, 2, [](int *indexes) {
-      int www = vec[indexes[0]] + vec[indexes[1]];
+      ll www = vec[indexes[0]] + vec[indexes[1]];
       if (www <= w && v[www] != 1) v[www]++;
     });
   }
 
   foreach_comb(n, 1, [](int *indexes) {
-    int www = vec[indexes[0]];
+    ll www = vec[indexes[0]];
     if (www <= w && v[www] != 1) v[www]++;
   });
 
